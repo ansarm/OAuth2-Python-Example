@@ -8,13 +8,13 @@ msgraph = { "resource":"https://graph.microsoft.com/", "appId": "14d82eec-204b-4
 
 tenant = "contoso.onmicrosoft.com"
 
-userName= "admin@ldej.onmicrosoft.com" 
+userName= "admin@contoso.onmicrosoft.com" 
 password ="" 
 
 scope = "Group.ReadWrite.All User.ReadWrite.All openid offline_access Directory.ReadWrite.All"
 
 target_UPN_suffix = "@contoso.net"
-default_password = "P@sswrod!"
+default_password = "P@ssword!"
 
 def GetOAuthTokenByUser(tenant, appID,userName, password, scope = ".default"):
   tokenBaseEndpoint = "https://login.microsoftonline.com/" + tenant + "/oauth2/v2.0/"
